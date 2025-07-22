@@ -1,0 +1,20 @@
+artifact_path: file:C:/Users/lenovo/Documents/Projects/-TumorVision-MLOps-Pipeline-Automated-MRI-Based-Detection-and-Explainability-main/artifacts/1/models/m-f05cb682869446559ead087e3ec878af/artifacts
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.10.0
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.12.8
+mlflow_version: 3.1.1
+model_id: m-f05cb682869446559ead087e3ec878af
+model_size_bytes: 60146395
+model_uuid: m-f05cb682869446559ead087e3ec878af
+prompts: null
+run_id: ba3fabb4a32f490dbb68a701b01729b1
+utc_time_created: '2025-07-22 07:07:43.157381'
