@@ -1,9 +1,45 @@
-mlops_project
-==============================
+# TumorTrack   
+**Automated MRI-Based Tumor Detection & Explainability**
 
-Brain Tumor Detection
+[![Docker Image Size](https://img.shields.io/docker/image-size/jayesh422x/tumortrack)](https://hub.docker.com/r/jayesh422x/tumortrack)
+[![License](https://img.shields.io/github/license/jayeshgit65/TumorTrack-Automated-MRI-Based-Tumor-Detection-and-Explainability-System)](LICENSE)
 
-Project Organization
+---
+
+## Project Overview
+
+TumorTrack is a complete pipeline for detecting brain tumors from MRI scans using deep learning. It features:
+- **Multi-class classification** (glioma, meningioma, pituitary, no-tumor) with state-of-the-art accuracy (~86%)
+- **Explainable AI** visualizations (Grad‑CAM) for clinician-friendly interpretability
+- **Streamlit-powered UI** to upload MRI scans and display predictions + heatmaps
+- **Robust CI/CD** with GitHub Actions to lint, test, build Docker images, and run security scans (Trivy)
+
+---
+
+## Features
+
+| Feature | Description |
+|--------|-------------|
+| **Deep Learning** | Utilizes pre-trained CNN (VGG) fine-tuned on MRI datasets |
+| **Explainability** | Generates Grad‑CAM heatmaps to highlight tumor regions |
+| **Dockerized Deployment** | Run locally or in the cloud with a single `docker run` command |
+| **Automated CI/CD** | Ensures code quality, security, and reproducible builds |
+
+---
+
+## Quick Start
+
+### Prerequisites
+- Docker installed
+- Optional: Python 3.11
+
+### Local Docker Run
+docker pull jayesh422x/tumortrack:latest
+docker run -p 8501:8501 jayesh422x/tumortrack:latest
+
+---
+
+## Project Organization
 ------------
 
     ├── LICENSE
@@ -54,4 +90,5 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>.</small></p>
