@@ -21,6 +21,7 @@ import mlflow.keras
 from PIL import Image
 import cv2
 import base64
+import os
 
 # Page Configuration 
 st.set_page_config(page_title="Brain Tumor Classification", layout="wide")
@@ -33,7 +34,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Make sure the model path is correct relative to this file
-model = load_model(r"C:\Users\lenovo\Documents\Projects\-TumorVision-MLOps-Pipeline-Automated-MRI-Based-Detection-and-Explainability-main\models\trained.h5")
+model = load_model(os.path.join("models","trained.h5"))
 
 # Class Labels
 classes = ['no_tumor', 'pituitary_tumor', 'meningioma_tumor', 'glioma_tumor']
